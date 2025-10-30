@@ -1,4 +1,5 @@
 import React, { useReducer, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { initialState, reducer } from '../reducer/reducer';
 import { searchShows } from '../api/tvmaze';
 import Filters from '../components/Filters';
@@ -8,6 +9,7 @@ import WatchlistPanel from '../components/WatchlistPanel';
 import Pagination from '../components/Pagination';
 
 const Home = () => {
+  const navigate = useNavigate();
   const [state, dispatch] = useReducer(reducer, initialState);
   const { query, filters, shows, watchlist, loading, error, page, pageSize } = state;
 
@@ -45,7 +47,7 @@ const Home = () => {
           page={page}
           pageSize={pageSize}
           onAddWatchlist={show => dispatch({ type: 'ADD_WATCHLIST', payload: show })}
-          onShowDetail={id => window.location.href = `/show/${id}`}
+          onShowDetail={id => navigate(`/show/${id}`)}
         />
         <Pagination
           currentPage={page}
