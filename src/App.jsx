@@ -5,7 +5,7 @@ import ShowDetail from './pages/ShowDetail';
 import Footer from './components/Footer';
 
 const App = () => (
-  <Router>
+  <Router basename="/SDU_FilmListesi_React">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/show/:id" element={<ShowDetail />} />
