@@ -1,16 +1,37 @@
-# React + Vite
+# Kampüs Film Kulübü - Dizi Arama Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, Süleyman Demirel Üniversitesi Film Kulübü için geliştirilmiş, TVMaze API'sini kullanarak dizi arama, filtreleme ve gösterim listesi oluşturma özelliklerine sahip bir React uygulamasıdır.
 
-Currently, two official plugins are available:
+## Canlı Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Uygulamanın canlı versiyonuna buradan ulaşabilirsiniz: **[https://dogannx.github.io/SDU_FilmListesi_React/](https://dogannx.github.io/SDU_FilmListesi_React/)**
 
-## React Compiler
+## Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dizi Arama:** Anahtar kelime ile dizi arama.
+- **Filtreleme:** Tür, dil ve minimum puana göre sonuçları filtreleme.
+- **Gösterim Listesi:** Beğenilen dizileri "Gösterime Girecekler" listesine ekleyip çıkarma.
+- **Sayfalama:** Arama sonuçlarını sayfalar arasında gezinme.
+- **Detay Sayfası:** Bir dizinin detaylı bilgilerini ve bölüm listesini görüntüleme.
 
-## Expanding the ESLint configuration
+## Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- `useReducer` ile state yönetimi
+- Axios ile API istekleri
+- React Router Dom ile sayfa yönlendirme
+
+## Kurulum ve Çalıştırma
+
+1. Projeyi klonlayın:
+   ```bash
+   git clone https://github.com/dogannx/SDU_FilmListesi_React.git
+   ```
+2. Gerekli paketleri yükleyin:
+   ```bash
+   npm install
+   ```
+3. Projeyi geliştirme modunda başlatın:
+   ```bash
+   npm run dev
+   ```
